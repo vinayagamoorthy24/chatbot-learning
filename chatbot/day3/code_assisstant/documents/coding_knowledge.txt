@@ -1,0 +1,210 @@
+==============================
+CODING KNOWLEDGE BASE
+==============================
+
+-----------------------------------
+SECTION 1: PYTHON BASICS
+-----------------------------------
+
+Python is an interpreted, high-level programming language used for web development, data science, automation, AI, and scripting.
+
+Variables:
+Python does not require explicit type declaration.
+
+Example:
+x = 10
+name = "John"
+
+Data Types:
+int, float, str, bool, list, tuple, dict
+
+Example:
+age = 21
+price = 99.99
+is_active = True
+
+-----------------------------------
+SECTION 2: PYTHON LOOPS
+-----------------------------------
+
+For Loop:
+Used to iterate over sequences.
+
+Example:
+for i in range(5):
+    print(i)
+
+While Loop:
+Executes while condition is True.
+
+Example:
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+Common Error:
+IndentationError occurs when spacing is incorrect.
+
+-----------------------------------
+SECTION 3: PYTHON FUNCTIONS
+-----------------------------------
+
+Functions are defined using the def keyword.
+
+Example:
+def greet(name):
+    return "Hello " + name
+
+Calling Function:
+print(greet("Alice"))
+
+Common Errors:
+1. IndentationError
+2. Missing colon after function definition
+
+-----------------------------------
+SECTION 4: OBJECT ORIENTED PROGRAMMING IN PYTHON
+-----------------------------------
+
+A class is a blueprint for creating objects.
+
+Example:
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        return "Hello " + self.name
+
+Creating Object:
+p = Person("Bob")
+print(p.greet())
+
+-----------------------------------
+SECTION 5: SQL BASICS
+-----------------------------------
+
+SQL stands for Structured Query Language.
+Used to interact with relational databases.
+
+SELECT:
+Retrieves data from a table.
+
+Example:
+SELECT * FROM users;
+
+WHERE:
+Filters records.
+
+Example:
+SELECT * FROM users WHERE age > 18;
+
+INSERT:
+Adds new records.
+
+Example:
+INSERT INTO users (name, age)
+VALUES ('John', 25);
+
+UPDATE:
+Modifies existing records.
+
+Example:
+UPDATE users
+SET age = 30
+WHERE name = 'John';
+
+DELETE:
+Removes records.
+
+Example:
+DELETE FROM users WHERE age < 18;
+
+Common SQL Error:
+Syntax error near 'FROM' usually means incorrect query structure.
+
+-----------------------------------
+SECTION 6: DATA STRUCTURES
+-----------------------------------
+
+List:
+Ordered and mutable collection.
+
+Example:
+numbers = [1, 2, 3]
+
+Dictionary:
+Key-value pair structure.
+
+Example:
+student = {
+    "name": "Alice",
+    "age": 20
+}
+
+Tuple:
+Ordered but immutable collection.
+
+Example:
+point = (10, 20)
+
+-----------------------------------
+SECTION 7: ALGORITHMS
+-----------------------------------
+
+Linear Search:
+Checks each element one by one.
+Time Complexity: O(n)
+
+Binary Search:
+Works on sorted array.
+Steps:
+1. Find middle element
+2. Compare with target
+3. Adjust range
+Time Complexity: O(log n)
+
+-----------------------------------
+SECTION 8: FLASK BASICS
+-----------------------------------
+
+Flask is a lightweight Python web framework.
+
+Basic App:
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello World"
+
+if __name__ == "__main__":
+    app.run()
+
+REST API Methods:
+GET - Retrieve data
+POST - Create data
+PUT - Update data
+DELETE - Remove data
+
+-----------------------------------
+SECTION 9: COMMON PROGRAMMING ERRORS
+-----------------------------------
+
+SyntaxError:
+Occurs when Python cannot parse code.
+
+TypeError:
+Occurs when operation is applied to wrong type.
+
+IndexError:
+Occurs when accessing invalid index in list.
+
+KeyError:
+Occurs when accessing non-existent dictionary key.
+
+-----------------------------------
+END OF DOCUMENT
+-----------------------------------
